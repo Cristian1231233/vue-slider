@@ -51,12 +51,10 @@
              </div> 
             </div>
             <div class="image-mini">
-                <div class="item2 evidence">
-                    <ul>
-                        <li v-for="image in images">
-                            <img :src="image" alt="">
-                        </li>
-                    </ul>
+                <div class="item2 evidence" v-for="image in images">
+                    <div class="overlay">
+                    </div>
+                   <img :src="image" alt="">
                     
                  <!-- <div class="overlay">
                        </div>
@@ -82,8 +80,8 @@
                     <img src="img/05.jpg" alt=""> -->
                 </div> 
                 
-                <div class="freccia-su"><i class="fas fa-chevron-up"></i></div>
-                <div class="freccia-giu"><i class="fas fa-chevron-down"></i></div>
+                <div @click="arrowUnder" class="freccia-su"><i class="fas fa-chevron-up"></i></div>
+                <div @click="arrowDown" class="freccia-giu"><i class="fas fa-chevron-down"></i></div>
             </div>
          
         </div>
