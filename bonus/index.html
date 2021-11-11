@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Carosello Multi Array</title>
+</head>
+<body>
+    <div id="app">
+      <div class="container">
+        <div class="slider">
+            <div class="image-big">
+                <div class="items active"> 
+                    <img :src="images[counter]" alt="">
+                <!-- <img src="img/01.jpg" alt="">
+                 <div class="testo">
+                   <h2>Svezia</h2>
+                   <div>Lorem ipsum</div>
+                </div>
+              </div>
+              <div class="items">
+                <img src="img/02.jpg" alt="">
+                <div class="testo">
+                    <h2>Svizzera</h2>
+                    <div>Lorem ipsum</div>
+                 </div>
+              </div>
+              <div class="items">
+                <img src="img/03.jpg" alt="">
+                <div class="testo">
+                    <h2>Gran Bretagna</h2>
+                    <div>Lorem ipsum</div>
+                 </div>
+              </div>
+              <div class="items">
+                <img src="img/04.jpg" alt="">
+                <div class="testo">
+                    <h2>Germaia</h2>
+                    <div>Lorem ipsum</div>
+                 </div>
+              </div>
+              <div class="items">
+                <img src="img/05.jpg" alt="">
+                <div class="testo">
+                    <h2>Paradise</h2>
+                    <div>Lorem ipsum</div>
+                 </div>   -->
+             </div> 
+            </div>
+            <div class="image-mini">
+                <div class="item2 evidence">
+                    <ul>
+                        <li v-for="image in images">
+                            <img :src="image" alt="">
+                        </li>
+                    </ul>
+                    
+                 <!-- <div class="overlay">
+                       </div>
+                      <img src="img/01.jpg" alt="">
+                </div>
+                <div class="item2">
+                    <div class="overlay">
+                    </div>
+                    <img src="img/02.jpg" alt="">
+                </div>
+                <div class="item2">
+                    <div class="overlay">
+                    </div>
+                    <img src="img/03.jpg" alt="">
+                </div>
+                <div class="item2">
+                    <div class="overlay">
+                    </div>
+                    <img src="img/04.jpg" alt="">
+                </div>
+                <div class="item2">
+                    
+                    <img src="img/05.jpg" alt=""> -->
+                </div> 
+                
+                <div class="freccia-su"><i class="fas fa-chevron-up"></i></div>
+                <div class="freccia-giu"><i class="fas fa-chevron-down"></i></div>
+            </div>
+         
+        </div>
+    </div>
+   </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
